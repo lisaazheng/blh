@@ -1,0 +1,56 @@
+//Int to String
+int i = 500;
+String str = String.valueOf(500);
+
+String str2 = "500";
+int k = Integer.parseInt(str2);
+
+//Print out ASCII value of a character
+int asciiValue = 'a';
+
+//ArrayList methods
+ArrayList<String> arr = new ArrayList<String>();
+        arr.add("hello");
+        arr.add("bonjour");
+        arr.get(0);
+        arr.set(0, "hi");
+        arr.remove(0);
+        arr.clear();
+        arr.size();
+
+//Array
+int[] intArray = {3, 4, 5};
+double[] doubleArray = {3.54444d, 3.1111d};
+
+//HashMap methods
+HashMap<Integer, String> months = new HashMap<Integer, String>();
+        months.put(1, "January");
+        months.put(2, "February");
+        months.put(3, "March");
+        months.put(4, "April");
+        months.get(1);
+        months.remove(1);
+        System.out.println(months.size());
+        months.clear();
+        
+//HashSet methods
+HashSet<String> taylor = new HashSet<String>();
+        taylor.add("folklore");
+        taylor.remove("folklore");
+        taylor.clear();
+        
+//round double to four places
+        double myDouble = 3.14159;
+        System.out.format("%.4f", myDouble);
+
+//round number using DecimalFormat
+DecimalFormat df = new DecimalFormat("0.000");
+df.format(myDouble);
+
+//round number using DecimalFormat and FLOOR and CEILING
+        DecimalFormat df = new DecimalFormat("0.000");
+        df.setRoundingMode(RoundingMode.FLOOR);
+        System.out.println(df.format(myDouble));
+        df.setRoundingMode(RoundingMode.CEILING);
+        System.out.println(df.format(myDouble));
+        
